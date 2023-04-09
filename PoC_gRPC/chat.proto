@@ -1,5 +1,5 @@
 syntax = "proto3";
-package proto;
+package main;
 option go_package = "PoCs/PoC_gRPC";
 
 message Message {

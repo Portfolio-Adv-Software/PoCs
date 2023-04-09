@@ -13,7 +13,7 @@ func main() {
 		log.Fatalf("failed to listen: %v", err)
 	}
 
-	s := proto.UnimplementedChatServiceServer{}
+	s := proto.Server{}
 	grpcServer := grpc.NewServer()
 	proto.RegisterChatServiceServer(grpcServer, &s)
 

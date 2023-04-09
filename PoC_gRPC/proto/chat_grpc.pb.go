@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v3.21.12
-// source: chat.proto
+// source: PoC_gRPC/chat.proto
 
 package proto
 
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ChatService_SayHello_FullMethodName = "/proto.ChatService/SayHello"
+	ChatService_SayHello_FullMethodName = "/main.ChatService/SayHello"
 )
 
 // ChatServiceClient is the client API for ChatService service.
@@ -96,7 +96,7 @@ func _ChatService_SayHello_Handler(srv interface{}, ctx context.Context, dec fun
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var ChatService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "proto.ChatService",
+	ServiceName: "main.ChatService",
 	HandlerType: (*ChatServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -105,5 +105,5 @@ var ChatService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "chat.proto",
+	Metadata: "PoC_gRPC/chat.proto",
 }
