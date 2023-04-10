@@ -1,6 +1,6 @@
 syntax = "proto3";
 package main;
-option go_package = "PoCs/PoC_gRPC";
+option go_package = "./proto";
 
 message Message {
   string body = 1;

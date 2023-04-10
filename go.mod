@@ -10,6 +10,7 @@ require (
 require google.golang.org/protobuf v1.30.0
 
 require (
+	github.com/rabbitmq/amqp091-go v1.8.0 // indirect
 	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
 	golang.org/x/text v0.8.0 // indirect
